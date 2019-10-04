@@ -1,0 +1,64 @@
+.wrap {
+    grid-area: addGroup;
+    background-color: #fff;
+    box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.addGroup,
+.input {
+    padding: 5px 5px 5px 10px;
+    width: 218px;
+    background-color: #edeef0;
+    border: none;
+    outline: none;
+    margin-left: 58px;
+
+}
+
+.input {
+    color: #2a5885;
+}
+
+.input::placeholder {
+    color: rgb(177, 175, 175);
+}
+
+.addGroupBtn,
+.backButton {
+    position: absolute;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #6a6d70;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.addGroupBtn {
+    left: 17px;
+    top: 13px;
+    transition: .3s;
+}
+
+.backButton {
+    right: 7px;
+    top: 9px;
+    font-size: 16px;
+    transform: rotate(45deg);
+    opacity: .5;
+}
+
+.backButton:hover {
+    opacity: 1;
+}
+
+.addGroupBtn:hover {
+    color: #0174b1;
+    text-decoration: underline;
+}

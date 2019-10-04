@@ -1,0 +1,77 @@
+.addTaskBlock {
+  grid-area: tasks;
+  background-color: #fff;
+  box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+  border-radius: 5px;
+  min-height: 40px;
+  margin-bottom: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.addTaksButton {
+  padding: 5px 5px 5px 10px;
+  width: 218px;
+  background-color: #edeef0;
+  border: none;
+  outline: none;
+  margin-left: 58px;
+}
+
+.saveTaskButton {
+  position: absolute;
+  left: 5px;
+  top: 13px;
+  z-index: 100;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #6a6d70;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.saveTaskButton:hover {
+  color: #0174b1;
+  text-decoration: underline;
+}
+
+.textarea {
+  padding: 5px 5px 5px 10px;
+  background-color: #edeef0;
+  outline: none;
+  border: none;
+  margin-top: 9px;
+  margin-bottom: 5px;
+  margin-left: 50px;
+  width: 400px;
+  height: 75px;
+  resize: none;
+  color: #2a5885;
+}
+
+.textarea::placeholder {
+  color: rgb(177, 175, 175);
+}
+
+.backButton {
+  position: absolute;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #6a6d70;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 100;
+  right: 159px;
+  top: 6px;
+  font-size: 16px;
+  transform: rotate(45deg);
+  opacity: .5;
+}
+
+.backButton:hover {
+  opacity: 1;
+}

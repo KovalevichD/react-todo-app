@@ -1,0 +1,19 @@
+.header {
+    background-color: #4a76a8;
+    grid-area: header;
+}
+
+.logoWrap {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 300px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 45px;
+
+}

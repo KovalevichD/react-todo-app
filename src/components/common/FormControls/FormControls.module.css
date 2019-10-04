@@ -1,0 +1,31 @@
+.formControl.error input,
+.formControl.error textarea {
+    border: 2px solid #e23c3a;
+}
+
+.formControl {
+    position: relative;
+}
+
+.formControl.error span {
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background-color: #be4b49;
+    border: 1px solid #993433;
+    border-radius: 0 10px 10px 10px;
+    bottom: -36px;
+    left: 161px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    opacity: .7;
+}
+
+.commonError {
+    border: 1px solid red;
+    padding: 10px;
+    color: red;
+}

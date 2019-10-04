@@ -1,0 +1,92 @@
+.groups {
+    display: flex;
+    flex-direction: column;
+    grid-area: groups;
+    box-sizing: border-box;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.item {
+    margin-bottom: 5px;
+    position: relative;
+    padding-left: 10px;
+}
+
+.item:hover {
+    background-color: #e1e5eb;
+}
+
+.item a {
+    height: 28px;
+    line-height: 27px;
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #2a5885;
+    text-decoration: none;
+    display: block;
+}
+
+.item a.active {
+    font-weight: bold;
+}
+
+.btnAddGroup {
+    margin-top: 20px;
+    align-self: center;
+}
+
+.editButton,
+.deletebutton {
+    position: absolute;
+    color: #6a6d70;
+    display: none;
+    cursor: pointer;
+    transition: .19s;
+    opacity: .5;
+}
+
+.editButton {
+    right: 32px;
+    top: 5px;
+    font-weight: bold;
+
+}
+
+.deletebutton {
+    right: 5px;
+    top: 3px;
+    transform: rotate(45deg);
+}
+
+.item:hover .editButton,
+.item:hover .deletebutton {
+    display: block;
+
+}
+
+.editButton:hover,
+.deletebutton:hover {
+    opacity: 1;
+
+}
+
+.count {
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    top: 0px;
+    border-radius: 3px;
+    right: 135px;
+    color: #62748a;
+    background-color: #d1d9e0;
+    cursor: pointer;
+}

@@ -1,0 +1,41 @@
+.tasks {
+    background-color: #fff;
+    box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+    border-radius: 5px;
+    min-height: 70px;
+    margin-bottom: 10px;
+    padding: 25px 10px 10px 10px;
+    position: relative;
+    transition: .3s;
+}
+
+.tasks:hover {
+    background-color: #f5f7fa;
+    cursor: pointer;
+}
+
+.tasks:hover .closeButton {
+    display: block;
+}
+
+.text {
+    margin: 0;
+    color: #2a5885;
+}
+
+.closeButton {
+    position: absolute;
+    transform: rotate(45deg);
+    right: 3px;
+    top: 0px;
+    color: #6a6d70;
+    cursor: pointer;
+    display: none;
+    transition: .19s;
+    opacity: .5;
+}
+
+.closeButton:hover {
+    opacity: 1;
+
+}
