@@ -2,7 +2,7 @@ import React from 'react';
 import Tasks from './Tasks';
 import { getTasks, setTask, deleteTask, editTask } from '../../Redux/tasks-reducer';
 import { connect } from 'react-redux';
-import { compose } from '../../../../../../AppData/Local/Microsoft/TypeScript/3.6/node_modules/redux';
+import { compose } from 'redux';
 import { Route } from 'react-router-dom';
 import { withRouter } from "react-router-dom";
 import style from './Tasks.module.css';

@@ -59,5 +59,11 @@
 }
 
 .editTextarea {
-    
+    border: none;
+    outline: none;
+    width: 70%;
+    height: 62px;
+    resize: none;
+    background-color: #edeef0;
+    color: #2a5885;
 }

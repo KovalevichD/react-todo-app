@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { getGroups, deleteGroups, editGroup } from '../../Redux/groups-reducer';
-import { compose } from '../../../../../../AppData/Local/Microsoft/TypeScript/3.6/node_modules/redux';
+import { compose } from 'redux';
 import Groups from './Groups';
 
 class GroupsContainer extends React.Component {
