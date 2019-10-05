@@ -17,7 +17,8 @@
     cursor: pointer;
 }
 
-.tasks:hover .closeButton {
+.tasks:hover .closeButton,
+.tasks:hover .editButton {
     display: block;
 }
 
@@ -26,13 +27,9 @@
     color: #2a5885;
 }
 
-.closeButton {
+.closeButton,
+.editButton {
     position: absolute;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    right: 3px;
-    top: 0px;
     color: #6a6d70;
     cursor: pointer;
     display: none;
@@ -42,6 +39,25 @@
     opacity: .5;
 }
 
-.closeButton:hover {
+.closeButton:hover,
+.editButton:hover {
     opacity: 1;
+}
+
+.closeButton {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    right: 3px;
+    top: 0px;
+}
+
+.editButton {
+    right: 33px;
+    top: 1px;
+    font-weight: bold;
+}
+
+.editTextarea {
+    
 }

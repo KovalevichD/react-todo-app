@@ -37,5 +37,9 @@ export const tasksAPI = {
   
   deleteTask(taskId) {
     return instanse.delete('/tasks/' + taskId)
+  },
+
+  editTask(taskText, groupId, taskId) {
+    return instanse.put(`/tasks/${taskId}`, {title: taskText, groupId: groupId, id: taskId})
   }
 }
