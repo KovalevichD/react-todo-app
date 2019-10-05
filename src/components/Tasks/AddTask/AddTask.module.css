@@ -1,13 +1,20 @@
 .addTaskBlock {
   grid-area: tasks;
   background-color: #fff;
+  -webkit-box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
   box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
   border-radius: 5px;
   min-height: 40px;
   margin-bottom: 10px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
   transition: 0.4s;
 }
 
@@ -52,6 +59,22 @@
   color: #2a5885;
 }
 
+.textarea::-webkit-input-placeholder {
+  color: rgb(177, 175, 175);
+}
+
+.textarea::-moz-placeholder {
+  color: rgb(177, 175, 175);
+}
+
+.textarea:-ms-input-placeholder {
+  color: rgb(177, 175, 175);
+}
+
+.textarea::-ms-input-placeholder {
+  color: rgb(177, 175, 175);
+}
+
 .textarea::placeholder {
   color: rgb(177, 175, 175);
 }
@@ -68,6 +91,8 @@
   right: 159px;
   top: 6px;
   font-size: 16px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
   opacity: .5;
 }

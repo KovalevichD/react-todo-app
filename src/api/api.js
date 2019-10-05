@@ -18,6 +18,10 @@ export const groupsAPI = {
 
   deleteGroup(groupId) {
     return instanse.delete('/groups/' + groupId)
+  },
+
+  editGroup(groupId, title) {
+    return instanse.put(`/groups/${groupId}`, {title: title, id: groupId})
   }
 }
 

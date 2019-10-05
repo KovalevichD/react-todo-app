@@ -1,11 +1,14 @@
 .tasks {
     background-color: #fff;
+    -webkit-box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
     box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
     border-radius: 5px;
     min-height: 70px;
     margin-bottom: 10px;
     padding: 25px 10px 10px 10px;
     position: relative;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 
@@ -25,17 +28,20 @@
 
 .closeButton {
     position: absolute;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     right: 3px;
     top: 0px;
     color: #6a6d70;
     cursor: pointer;
     display: none;
+    -webkit-transition: .19s;
+    -o-transition: .19s;
     transition: .19s;
     opacity: .5;
 }
 
 .closeButton:hover {
     opacity: 1;
-
 }
