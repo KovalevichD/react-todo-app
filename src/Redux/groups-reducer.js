@@ -62,4 +62,15 @@ export const deleteGroups = (groupId) => {
     }
 }
 
+export const editGroup = (groupId, title) => {
+    return async (dispatch) => {
+        
+        const data = await groupsAPI.editGroup(groupId, title);
+        
+        if (data.statusText === "OK") {
+            dispatch(getGroups())
+        }
+    }
+}
+
 export default groupsReducer;

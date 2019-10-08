@@ -1,7 +1,13 @@
 .groups {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     grid-area: groups;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -26,6 +32,7 @@
     line-height: 27px;
     font-size: 18px;
     overflow: hidden;
+    -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
     color: #2a5885;
     text-decoration: none;
@@ -38,6 +45,8 @@
 
 .btnAddGroup {
     margin-top: 20px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center;
 }
 
@@ -47,6 +56,8 @@
     color: #6a6d70;
     display: none;
     cursor: pointer;
+    -webkit-transition: .19s;
+    -o-transition: .19s;
     transition: .19s;
     opacity: .5;
 }
@@ -61,6 +72,8 @@
 .deletebutton {
     right: 5px;
     top: 3px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
@@ -82,6 +95,7 @@
     width: 25px;
     height: 28px;
     line-height: 28px;
+    font-size: 14px;
     text-align: center;
     top: 0px;
     border-radius: 3px;
@@ -89,4 +103,16 @@
     color: #62748a;
     background-color: #d1d9e0;
     cursor: pointer;
+}
+
+.editInput {
+    border: none;
+    outline: none;
+    height: 28px;
+    line-height: 27px;
+    font-size: 16px;
+    background-color: transparent;
+    color: #2a5885;
+    font-style: italic;
+    text-decoration: underline;
 }

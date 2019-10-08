@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { getGroups, deleteGroups } from '../../Redux/groups-reducer';
-import { compose } from '../../../../../../AppData/Local/Microsoft/TypeScript/3.6/node_modules/redux';
+import { getGroups, deleteGroups, editGroup } from '../../Redux/groups-reducer';
+import { compose } from 'redux';
 import Groups from './Groups';
 
 class GroupsContainer extends React.Component {
@@ -14,7 +14,8 @@ class GroupsContainer extends React.Component {
             <Groups
                 groups={this.props.groups}
                 tasks={this.props.tasks}
-                deleteGroups={this.props.deleteGroups} />
+                deleteGroups={this.props.deleteGroups}
+                editGroup={this.props.editGroup} />
         );
     }
 }
@@ -27,6 +28,6 @@ const mapStateToProps = (state) => {
 }
 
 export default compose(
-    connect(mapStateToProps, { getGroups, deleteGroups }),
+    connect(mapStateToProps, { getGroups, deleteGroups, editGroup }),
 )(GroupsContainer)
 

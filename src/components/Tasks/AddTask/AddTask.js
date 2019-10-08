@@ -15,7 +15,7 @@ const AddTaskForm = (props) => {
 const AddTaskReduxForm = reduxForm({ form: 'addTask' })(AddTaskForm);
 
 const AddTask = ({ groupId, setTask }) => {
-
+    
     const [editMode, setEditMode] = useState(false);
 
     const onSubmit = (formData) => {

@@ -1,24 +1,9 @@
 {
   "tasks": [
     {
-      "groupId": 7,
-      "title": "Bla bla bla Bla bla bla Bla bld bla bbla bla Bla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBlaBla blabla bla Bla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaB blaBlbla bla Bla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBa bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla bla Bla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla blaBla bla bla",
-      "id": 7
-    },
-    {
       "title": "I`m React ninja, iiiiyaa!",
       "groupId": 16,
       "id": 14
-    },
-    {
-      "title": "Pet the cat",
-      "groupId": 15,
-      "id": 15
-    },
-    {
-      "title": "Next week I will go to the store - a wonderful trip!",
-      "groupId": 7,
-      "id": 16
     },
     {
       "title": "I`m JavaScript samurai! Chak!!! Chak!!! Pink!!!",
@@ -29,20 +14,33 @@
       "title": "I really need a job",
       "groupId": 16,
       "id": 18
+    },
+    {
+      "title": "Go to store",
+      "id": 19
+    },
+    {
+      "title": "Go to store!!",
+      "id": 20
+    },
+    {
+      "title": "Go to store!!",
+      "groupId": 17,
+      "id": 21
     }
   ],
   "groups": [
     {
+      "title": "Work",
+      "id": 16
+    },
+    {
       "title": "Travel",
-      "id": 7
+      "id": 17
     },
     {
       "title": "Home",
-      "id": 15
-    },
-    {
-      "title": "Work",
-      "id": 16
+      "id": 18
     }
   ],
   "user": {

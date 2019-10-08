@@ -63,4 +63,15 @@ export const deleteTask = (taskId) => {
     }
 }
 
+export const editTask = (taskText, groupId, taskId) => {
+    return async (dispatch) => {
+        
+        const data = await tasksAPI.editTask(taskText, groupId, taskId);
+        
+        if (data.statusText === "OK") {
+            dispatch(getTasks())
+        }
+    }
+}
+
 export default tasksReducer;

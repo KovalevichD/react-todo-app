@@ -2,7 +2,7 @@ import React from 'react';
 import Task from './Task/Task';
 import AddTask from './AddTask/AddTask';
 
-const Tasks = ({ location, tasks, getTasks, setTask, deleteTask, ...props }) => {
+const Tasks = ({ location, tasks, getTasks, setTask, deleteTask, editTask }) => {
 
   const groupId = +location.pathname.split('/').pop();
   const filterTasks = tasks.filter(task => task.groupId === groupId);
@@ -16,9 +16,11 @@ const Tasks = ({ location, tasks, getTasks, setTask, deleteTask, ...props }) => 
     {filterTasks.map(task => {
       return <Task
         key={task.id}
-        body={task.title}
+        taskBody={task.title}
         deleteTask={deleteTask}
-        taskId={task.id} />
+        editTask={editTask}
+        taskId={task.id}
+        groupId={groupId} />
     })}
   </>)
 }

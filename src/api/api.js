@@ -18,6 +18,10 @@ export const groupsAPI = {
 
   deleteGroup(groupId) {
     return instanse.delete('/groups/' + groupId)
+  },
+
+  editGroup(groupId, title) {
+    return instanse.put(`/groups/${groupId}`, {title: title, id: groupId})
   }
 }
 
@@ -33,5 +37,9 @@ export const tasksAPI = {
   
   deleteTask(taskId) {
     return instanse.delete('/tasks/' + taskId)
+  },
+
+  editTask(taskText, groupId, taskId) {
+    return instanse.put(`/tasks/${taskId}`, {title: taskText, groupId: groupId, id: taskId})
   }
 }

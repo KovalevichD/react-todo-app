@@ -1,10 +1,17 @@
 .wrap {
     grid-area: addGroup;
     background-color: #fff;
+    -webkit-box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
     box-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
     border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     position: relative;
 }
@@ -22,6 +29,22 @@
 
 .input {
     color: #2a5885;
+}
+
+.input::-webkit-input-placeholder {
+    color: rgb(177, 175, 175);
+}
+
+.input::-moz-placeholder {
+    color: rgb(177, 175, 175);
+}
+
+.input:-ms-input-placeholder {
+    color: rgb(177, 175, 175);
+}
+
+.input::-ms-input-placeholder {
+    color: rgb(177, 175, 175);
 }
 
 .input::placeholder {
@@ -43,6 +66,8 @@
 .addGroupBtn {
     left: 17px;
     top: 13px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
     transition: .3s;
 }
 
@@ -50,6 +75,8 @@
     right: 7px;
     top: 9px;
     font-size: 16px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     opacity: .5;
 }
