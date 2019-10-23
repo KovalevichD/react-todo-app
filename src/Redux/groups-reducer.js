@@ -33,7 +33,7 @@ export const getGroups = () => {
     return async (dispatch) => {
 
         const data = await groupsAPI.getGroups();
-
+        
         if (data.statusText === "OK") {
             dispatch(getGroupsSucces(data.data))
         }
